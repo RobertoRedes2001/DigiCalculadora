@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculadora de Combate</title>
+    <title>DigiCalculadora</title>
+    <link rel="icon" href="imgs/logo.png" type="image/x-icon">
 </head>
 <body>
     <form>
         <div>
             <label>ATACANTE</label>
             <div>
-                <input type="text" placeholder="ATK">
-                <select>
+                <input type="number" placeholder="ATK/INT">
+                <input type="number" placeholder="Bono">
+                <select id="AtributoATK">
                     <option>ATRIBUTO</option>
                 </select>
-                <select>
+                <select id="TipoATK">
                     <option>TIPO</option>
                 </select>
                 <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
@@ -24,11 +26,12 @@
         <div>
             <label>DEFENSOR</label>
             <div>
-                <input type="text" placeholder="DEF">
-                <select>
+                <input type="number" placeholder="DEF/INT">
+                <input type="number" placeholder="Bono">
+                <select id="AtributoDEF">
                     <option>ATRIBUTO</option>
                 </select>
-                <select>
+                <select  id="TipoDEF">
                     <option>TIPO</option>
                 </select>
                 <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
@@ -39,7 +42,7 @@
         <div>
             <label>DADOS</label>
             <div>
-                <input type="text" placeholder="Resultado Tirada">
+                <input type="number" placeholder="Resultado Tirada">
                 <input type="checkbox" id="critico-dano"><label for="critico-dano">CRÍTICO DAÑO</label>
                 <input type="checkbox" id="critico-precision"><label for="critico-precision">CRÍTICO PRECISIÓN</label>
             </div>
