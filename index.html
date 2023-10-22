@@ -5,20 +5,19 @@
     <link rel="icon" href="imgs/logo.png" type="image/x-icon">
 </head>
 <body>
-    <form>
         <div>
             <label>ATACANTE</label>
             <div>
-                <input type="number" placeholder="ATK/INT">
-                <input type="number" placeholder="Bono">
-                <select id="AtributoATK">
+                <input type="number" id="atk" placeholder="ATK/INT">
+                <input type="number" id="bonoATK" placeholder="Bono">
+                <select id="atributoATK">
                     <option>ATRIBUTO</option>
                 </select>
-                <select id="TipoATK">
+                <select id="tipoATK">
                     <option>TIPO</option>
                 </select>
-                <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
-                <input type="checkbox" id="break"><label for="break">BREAK</label>
+                <input type="checkbox" id="chargeATK"><label for="charge">CHARGE</label>
+                <input type="checkbox" id="breakATK"><label for="break">BREAK</label>
                 <input type="checkbox" id="boost"><label for="boost">BOOST</label>
             </div>
         </div>
@@ -26,25 +25,25 @@
         <div>
             <label>DEFENSOR</label>
             <div>
-                <input type="number" placeholder="DEF/INT">
-                <input type="number" placeholder="Bono">
-                <select id="AtributoDEF">
+                <input type="number" id="def" placeholder="DEF/INT">
+                <input type="number" id="bonoDEF" placeholder="Bono">
+                <select id="atributoDEF">
                     <option>ATRIBUTO</option>
                 </select>
-                <select  id="TipoDEF">
+                <select  id="tipoDEF">
                     <option>TIPO</option>
                 </select>
-                <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
-                <input type="checkbox" id="break"><label for="break">BREAK</label>
+                <input type="checkbox" id="chargeDEF"><label for="charge">CHARGE</label>
+                <input type="checkbox" id="breakDEF"><label for="break">BREAK</label>
                 <input type="checkbox" id="guard"><label for="guard">GUARD</label>
             </div>
         </div>
         <div>
             <label>DADOS</label>
             <div>
-                <input type="number" placeholder="Resultado Tirada">
-                <input type="checkbox" id="critico-dano"><label for="critico-dano">CRÍTICO DAÑO</label>
-                <input type="checkbox" id="critico-precision"><label for="critico-precision">CRÍTICO PRECISIÓN</label>
+                <input type="number" id="dado" placeholder="Resultado Tirada">
+                <input type="checkbox" id="criDMG"><label for="critico-dano">CRÍTICO DAÑO</label>
+                <input type="checkbox" id="critSPD"><label for="critico-precision">CRÍTICO PRECISIÓN</label>
             </div>
         </div>
         <table>
@@ -57,6 +56,6 @@
             </tr>
         </table>
         <button>Calcular</button>
-    </form>
+    <script src="digical.js"></script>
 </body>
 </html>
