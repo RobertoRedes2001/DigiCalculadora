@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Combate</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>ATACANTE</label>
+            <div>
+                <input type="text" placeholder="ATK">
+                <select>
+                    <option>ATRIBUTO</option>
+                </select>
+                <select>
+                    <option>TIPO</option>
+                </select>
+                <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
+                <input type="checkbox" id="break"><label for="break">BREAK</label>
+                <input type="checkbox" id="boost"><label for="boost">BOOST</label>
+            </div>
+        </div>
+
+        <div>
+            <label>DEFENSOR</label>
+            <div>
+                <input type="text" placeholder="DEF">
+                <select>
+                    <option>ATRIBUTO</option>
+                </select>
+                <select>
+                    <option>TIPO</option>
+                </select>
+                <input type="checkbox" id="charge"><label for="charge">CHARGE</label>
+                <input type="checkbox" id="break"><label for="break">BREAK</label>
+                <input type="checkbox" id="guard"><label for="guard">GUARD</label>
+            </div>
+        </div>
+        <div>
+            <label>DADOS</label>
+            <div>
+                <input type="text" placeholder="Resultado Tirada">
+                <input type="checkbox" id="critico-dano"><label for="critico-dano">CRÍTICO DAÑO</label>
+                <input type="checkbox" id="critico-precision"><label for="critico-precision">CRÍTICO PRECISIÓN</label>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td>ATAQUE</td>
+                <td>-</td>
+                <td>DEFENSA</td>
+                <td>=</td>
+                <td>DAÑO</td>
+            </tr>
+        </table>
+        <button>Calcular</button>
+    </form>
+</body>
+</html>
